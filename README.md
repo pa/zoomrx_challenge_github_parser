@@ -10,6 +10,6 @@ This repo contains a python script module which accepts set of inputs from stdin
 ## How to run the script
 * Clone the repository locally
 * In github_stats.py file, replace #GHUSERNAME and #GHPASSWORD with GitHub credentials
-* Run the following commands.
+* Run the following commands.\
 pip install -r requirements.txt\
 python github_stats.py
