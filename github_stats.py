@@ -1,6 +1,8 @@
 from github3 import login
 import csv
 import os
+import pandas
+pandas.set_option('max_columns',10)
 
 repository_name = []
 clone_url = []
@@ -14,7 +16,6 @@ def github_status():
     """
     github_user_name = os.environ['GITHUB_USERNAME']
     github_password = os.environ['GITHUB_PASSWORD']
-    github_connect = login(username=github_user_name, password=github_password)
     try:
         with open('Github_stats.csv', 'w', newline='') as csvfile:
             csvfile.truncate(0)
@@ -25,6 +26,10 @@ def github_status():
 
 
         csvfile.close()
+        print("\nCSV file output")
+        df = pandas.read_csv('Github_stats.csv')
+        print(df)
+
 
     except PermissionError as pe:
         print("\nPlease close the CSV file to rewrite")
