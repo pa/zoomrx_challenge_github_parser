@@ -9,7 +9,7 @@ This repo contains a python script module which accepts set of inputs from stdin
 
 ## How to build and run Docker
 docker build -t github_stats .\
-docker run -it --env GITHUB_USERNAME=<GitHub Username> --env GITHUB_PASSWORD=<GitHub Password> github_stats
+docker run -it --env GITHUB_USERNAME="GitHub Username" --env GITHUB_PASSWORD="GitHub Password" github_stats
 
 ## Sample Execution
 Please enter a list of public Github repositories and type 'quit' to proceed
