@@ -16,6 +16,7 @@ def github_status():
     """
     github_user_name = os.environ['GITHUB_USERNAME']
     github_password = os.environ['GITHUB_PASSWORD']
+    github_connect = login(username=github_user_name, password=github_password)
     try:
         with open('Github_stats.csv', 'w', newline='') as csvfile:
             csvfile.truncate(0)
