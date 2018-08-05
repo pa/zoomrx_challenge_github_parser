@@ -21,10 +21,9 @@ Please wait parsing...
 
 Parsed to Github_stats.csv file in path :  /
 
-
-CSV file output
+CSV file output\
     Repository_Name                                          Clone_Url  \
-0  zoomrx-challenge  https://github.com/pramodhayyappan92/zoomrx-ch...
+0  zoomrx-challenge  https://github.com/pramodhayyappan92/zoomrx-ch...\
 
-  Latest_Commit_Date Latest_Commited_Author
-0         2018-08-01      pramodhayyappan92
+  Latest_Commit_Date Latest_Commited_Author\
+0         2018-08-01      pramodhayyappan92\
