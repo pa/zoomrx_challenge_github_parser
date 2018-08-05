@@ -12,8 +12,9 @@ def github_status():
     """
     Creates Github_stats.csv in local filesyastem and calls github_status_parser function.
     """
-
-    github_connect = login(username='#GHUSERNAME', password='#GHPASSWORD')
+    github_user_name = os.environ['GITHUB_USERNAME']
+    github_password = os.environ['GITHUB_PASSWORD']
+    github_connect = login(username=github_user_name, password=github_password)
     try:
         with open('Github_stats.csv', 'w', newline='') as csvfile:
             csvfile.truncate(0)
