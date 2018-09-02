@@ -4,6 +4,6 @@ files:
   - source: .
     destination: /home/ec2-user/
 hooks:
-  ApplicationStart:
-    - location: application_start.sh
-      timeout: 30
+    BeforeInstall:
+    - location: /home/ec2-user/application_start.sh
+      runas: root
