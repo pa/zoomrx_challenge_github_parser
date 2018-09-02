@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t github_stats https://github.com/pramodhayyappan92/zoomrx_challenge_github_parser.git
+      - docker build -t github_stats https://github.com/pramodhayyappan92/zoomrx_challenge_github_parser.git .
   post_build:
     commands:
       - echo Build completed on `date`
