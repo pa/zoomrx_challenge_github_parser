@@ -5,4 +5,5 @@ files:
     destination: /home/ec2-user/
 hooks:
     BeforeInstall:
+    - cd /home/ec2-user
     - docker build -t github_stats .
