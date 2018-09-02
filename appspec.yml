@@ -6,4 +6,3 @@ files:
 hooks:
     BeforeInstall:
     - docker build -t github_stats .
-      runas: root
