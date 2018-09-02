@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: .
+hooks:
+  ApplicationStart:
+    - location: deployment/application_start.sh
+      timeout: 30
