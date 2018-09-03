@@ -6,4 +6,3 @@ files:
 hooks:
   ApplicationStart:
     - docker build -t github_stats .
-      timeout: 30
