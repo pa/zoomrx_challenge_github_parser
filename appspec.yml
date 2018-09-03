@@ -5,4 +5,4 @@ files:
     destination: /home/ec2-user
 hooks:
   ApplicationStart:
-    - docker build -t github_stats .
+    - location: deployemnt/dockerbuild.sh
