@@ -5,6 +5,6 @@ files:
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: dockerbuild.sh
+    - location: /home/ec2-user/dockerbuild.sh
       timeout: 1200
       runas: root
