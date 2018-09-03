@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: .
-    destination: /home/ec2-user/
+    destination: /home/ec2-user
 hooks:
-    BeforeInstall:
-    - cd /home/ec2-user
+  ApplicationStart:
     - docker build -t github_stats .
+      timeout: 30
