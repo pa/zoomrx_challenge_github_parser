@@ -4,7 +4,7 @@ files:
   - source: .
     destination: /home/ec2-user
 hooks:
-  ApplicationStart:
+  BeforeInstall:
     - location: deployment/dockerbuild.sh
       timeout: 1200
       runas: root
