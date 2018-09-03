@@ -6,4 +6,3 @@ files:
 hooks:
   ApplicationStart:
     - location: deployment/dockerbuild.sh
-      timeout: 30
